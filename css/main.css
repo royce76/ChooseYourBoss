@@ -87,6 +87,104 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*///Mobile first///*/
+
+/*///General rules///*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+nav {
+  height: 10.5vh;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+header {
+  width: 90%;
+  margin: 2em auto;
+  font-size: 1.65em;
+  padding-bottom: 0.5em;
+}
+
+h1 {
+  line-height: 0.9em;
+  font-weight: 1900;
+}
+
+
+/*///Utility class///*/
+
+.police {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titleColor {
+  color:#162049;
+}
+
+.marginBot {
+  margin-bottom: 1.5em;
+}
+
+.flex {
+  display:flex;
+}
+
+.directColumn {
+  flex-direction: column;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.spaceAround {
+  justify-content: space-around ;
+}
+
+.none {
+  display: none;
+}
+
+.bgLink {
+  padding: 0.3em 0.8em;
+  background-color: #4d22ff;
+  border-radius: 0.9em;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+/*///Common rules///*/
+
+/*///Nav///*/
+
+nav figure {
+  width: 35%;
+  position: absolute;
+  right: 30%;
+}
+
+nav figure img {
+  width: 100%;
+}
+
+nav div {
+  width: 13%;
+}
+
+nav div img {
+  width: 100%;
+}
+
+/*///Header///*/
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
