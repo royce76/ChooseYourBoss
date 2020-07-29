@@ -1,21 +1,19 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Choose your boss</title>
+  <meta name="description" content="Les candidats postulent avec leur CV. Ils ont accès à une liste d'entreprise et choisissent leur employeur.">
+  <meta name="keywords" content="candidat, CV, travail, entreprise, recruteur, boss, choose">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
+  
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  
+  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -23,19 +21,145 @@
 </head>
 
 <body>
+  <!--nav = logo + menu burger-->
+  <nav>
+    <figure>
+      <img src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" alt="logo chooseyourboss">
+    </figure>
+    <figure>
+      <img src="https://img.icons8.com/material/24/000000/menu--v1.png" alt="menu burger"/>
+    </figure>
+    <div>
+      <a href="#">Offres</a>
+      <a href="#">Entreprises</a>
+      <a href="#">Salaires</a>
+      <a href="#">Évènements</a>
+      <a href="#">Blog</a>
+      <a href="#">Connexion</a>
+      <a href="#">Inscription</a>
+      <a href="#">Vous êtes recruteur</a>
+    </div>
+  </nav>
+  <!--header = h1,p + figure-->
+  <header>
+    <section>
+      <h1>Le matching parfait est aussi professionnel</h1>
+      <p>Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta prochaine squad !</p>
+      <a href="#">Je m'inscris</a>
+    </section>
+    <figure>
+      <img src="img/man.png" alt="Photo d'un monsieur">
+    </figure>
+  </header>
+  <main>
+    <!--use div separate in 3 sections-->
+    <div>
+      <section>
+        <h3>Candidats</h3>
+        <p>152 000</p>
+      </section>
+      <section>
+        <h3>Rencontres</h3>
+        <p>473 000</p>
+      </section>
+      <section>
+        <h3>Recruteurs</h3>
+      </section>
+    </div>
+    <!--section = h2,p + (article=>title + figure)*3-->
+    <section>
+      <h2>L'algorithme travaille pour toi</h2>
+      <p>Accède à des matchings personnalisés tout en restant protégé et anonyme</p>
+      <div>
+        <div>
+          <article>
+            <figure>
+              <img src="img/matching1.png" alt="personnalisation">
+            </figure>
+            <h3>Personnalisation</h3>
+            <p>Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
+          </article>
+          <article>
+            <figure>
+              <img src="img/matching2.png" alt="3 en 1">
+            </figure>
+            <h3>3 en 1</h3>
+            <p>Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement aux offres qui te plaisent.</p>
+          </article>
+        </div>
+        <article>
+          <figure>
+            <img src="img/matching3.png" alt="Anonymat">
+          </figure>
+          <h3>Anonymat</h3>
+          <p>Ton profil reste protégé et anonyme jusqu'à ta maise en relation avec le recruteur de ton choix, évitant ainsi toute sur-sollicitation.</p>
+        </article>
+      </div>
+      <a href="#">J'accède à mes matchings</a>
+    </section>
+    <!--section = h2,p + (figure(A))*5-->
+    <section>
+      <h2>Tous les jobs informatiques et numériques</h2>
+      <p>Découvre les dernières offres d'emploi tech', produit, data, marketing et design</p>
+      <div><!--use to contain the 5 figure(A) for break point 1200 px-->
+        <div><!--use to contain 3 figure(A) for break point 768 px-->
+          <a href="#">
+            <figure>
+              <img src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/tech.svg" alt="Tech">
+              <figcaption>Tech</figcaption> 
+            </figure> 
+          </a>
+          <a href="#">
+            <figure>
+              <img src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/produit.svg" alt="Produit">
+              <figcaption>Produit</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure>
+              <img src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/marketing.svg" alt="Marketing">
+              <figcaption>Marketing</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <figure>
+              <img src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">
+              <figcaption>Data</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure>
+              <img src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" alt="Création">
+              <figcaption>Creation</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+      <a href="#">Je découvre toutes les offres</a>
+    </section>
+    <!--section = h2,p + article-->
+    <section>
+      <h2>Mérites-tu un meilleur salaire ?</h2>
+      <div><!--use to display flex article and figure-->
+        <article>
+          <h3>Baromètre des salaire IT</h3>
+          <p>Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et localisation.</p>
+        </article>
+        <figure>
+          <img src="img/salaire.svg" alt="Salaire">
+        </figure>
+      </div>
+      <a href="#">Je découvre mon salaire</a>
+    </section>
+  </main>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
