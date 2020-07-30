@@ -112,20 +112,15 @@ header {
   font-size: 1.65em;
 }
 
+h1 {
+  font-size: 1.7em;
+  line-height: 1em;
+}
+
 
 /*///Utility class///*/
 
-.police {
-  font-family: 'Gotham Black', sans-serif;
-  font-weight: 400;
-  font-size: 1.7em;
-  color:#162049;
-  line-height: 1em; 
-}
-
-.marginBot {
-  margin-bottom: 1.5em;
-}
+  /*///Position///*/
 
 .flex {
   display:flex;
@@ -159,12 +154,34 @@ header {
   display: none;
 }
 
+.textCenter {
+  text-align: center;
+}
+
+.textJustify {
+  text-align: justify;
+}
+
+  /*///Police,color///*/
+
+.gotham {
+  font-family: 'Gotham Black', sans-serif;
+}
+
+.title {
+  font-weight: 400;
+  color:#162049; 
+}
+
 .bgLink {
   padding: 0.3em 1em;
   background-color: #4d22ff;
   border-radius: 0.9em;
   text-decoration: none;
   font-weight: 500;
+}
+
+.colorWhite {
   color: #fff;
 }
 
@@ -200,10 +217,57 @@ header {
 
 /*///Header///*/
 
-@media screen and (min-width: 489px) {
-  nav {
-    height: 15vh;
-  }
+header section p {
+  margin-bottom: 1.5em;
+}
+
+
+/*///Main///*/
+
+main section h2 {
+  font-size: 2.2em;
+  line-height: 1.1em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.h2p { /*paragraph folow by h2*/
+  font-size: 1.65em;
+  line-height: 1em;
+  margin: 0.5em;
+}
+
+  /*///First block main///*/
+
+.bgcMauve {
+  background-color: #2b345d;
+  padding: 3em; 
+}
+
+.color2fd {
+  color: #2fd;
+  margin: 0.5em;
+}
+
+.fontp {
+  font-size: 2em;
+}
+
+/*///Second block///*/
+
+.dimension, .containp {
+  width: 70%;
+}
+
+.dimImg {
+  width: 100%;
+}
+
+.h3p { /*paragraph folow by h3*/
+  font-size: 1.1em;
+}
+
+
 
 /* ==========================================================================
    Helper classes
