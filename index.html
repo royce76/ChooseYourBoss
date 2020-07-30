@@ -75,17 +75,17 @@
     <section class="flex directColumn alignCenter">
       <h2 class="title gotham">L'algorithme travaille pour toi</h2>
       <p class="h2p textCenter">Accède à des matchings personnalisés tout en restant protégé et anonyme</p>
-      <div>
-        <div>
+      <div class="minitabDimDiv">
+        <div class="minitabFlex">
           <article class="flex directColumn alignCenter">
-            <figure class="dimension">
+            <figure class="dimension minitabDimension">
               <img class="dimImg" src="img/matching1.png" alt="personnalisation">
             </figure>
             <h3 class="gotham title">Personnalisation</h3>
             <p class="h3p containp textJustify">Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
           </article>
           <article class="flex directColumn alignCenter">
-            <figure  class="dimension">
+            <figure  class="dimension minitabDimension2">
               <img class="dimImg" src="img/matching2.png" alt="3 en 1">
             </figure>
             <h3 class="gotham title">3 en 1</h3>
@@ -93,11 +93,11 @@
           </article>
         </div>
         <article class="flex directColumn alignCenter">
-          <figure class="dimension">
+          <figure class="dimension minitabDimension3">
             <img class="dimImg" src="img/matching3.png" alt="Anonymat">
           </figure>
           <h3 class="gotham title">Anonymat</h3>
-          <p class="h3p containp textJustify">Ton profil reste protégé et anonyme jusqu'à ta maise en relation avec le recruteur de ton choix, évitant ainsi toute sur-sollicitation.</p>
+          <p class="h3p containp minitabDimension4 textJustify">Ton profil reste protégé et anonyme jusqu'à ta maise en relation avec le recruteur de ton choix, évitant ainsi toute sur-sollicitation.</p>
         </article>
       </div>
       <a class="bgLink colorWhite lienMargin lienFont" href="#">J'accède à mes matchings</a>
@@ -106,37 +106,47 @@
     <section class="flex directColumn alignCenter">
       <h2 class="title gotham">Tous les jobs informatiques et numériques</h2>
       <p class="h2p textCenter">Découvre les dernières offres d'emploi tech', produit, data, marketing et design</p>
-      <div><!--use to contain the 5 figure(A) for break point 1200 px-->
-        <div><!--use to contain 3 figure(A) for break point 768 px-->
-          <a class="flex directColumn alignCenter" href="#">
-            <figure class="dimension2">
-              <img class="dimImg" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/tech.svg" alt="Tech">
-              <figcaption class="textCenter title gotham">Tech</figcaption> 
-            </figure> 
-          </a>
-          <a class="flex directColumn alignCenter" href="#">
-            <figure class="dimension2">
-              <img class="dimImg" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/produit.svg" alt="Produit">
-              <figcaption class="textCenter title gotham">Produit</figcaption>
-            </figure>
-          </a>
-          <a class="flex directColumn alignCenter" href="#">
-            <figure class="dimension2">
-              <img class="dimImg" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/marketing.svg" alt="Marketing">
-              <figcaption class="textCenter title gotham">Marketing</figcaption>
-            </figure>
-          </a>
+      <div class="minitabDimDiv2 test"><!--use to contain the 5 figure(A) for break point 1200 px-->
+        <div><!--use to contain 3 figure(A) for break point 768 px with display none for the fourth img-->
+          <div class="test4 minitabFlex"><!--use to contain 2 figure(A) for break point 576 px-->
+            <a class="flex directColumn alignCenter test2" href="#">
+              <figure class="dimension2 minitabDimension5">
+                <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/tech.svg" alt="Tech">
+                <figcaption class="textCenter title gotham">Tech</figcaption> 
+              </figure> 
+            </a>
+            <a class="flex directColumn alignCenter test3" href="#">
+              <figure class="dimension2 minitabDimension5">
+                <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/produit.svg" alt="Produit">
+                <figcaption class="textCenter title gotham">Produit</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="test4 minitabFlex"><!--use to contain 2 figure(A) for break point 576 px-->
+            <a class="flex directColumn alignCenter test2" href="#">
+              <figure class="dimension2 minitabDimension5">
+                <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/marketing.svg" alt="Marketing">
+                <figcaption class="textCenter title gotham">Marketing</figcaption>
+              </figure>
+            </a>
+            <a class="flex directColumn alignCenter test3" href="#"><!--desactivate only in break point 1200px-->
+              <figure class="dimension2 minitabDimension5">
+                <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">
+                <figcaption class="textCenter title gotham">Data</figcaption>
+              </figure>
+            </a>
+          </div>
         </div>
-        <div>
-          <a class="flex directColumn alignCenter" href="#">
-            <figure class="dimension2">
-              <img class="dimImg" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">
+        <div class="minitabFlex minitabCenter">
+          <a class="flex directColumn alignCenter none test3" href="#"> <!--activate only in break point 1200px-->
+            <figure class="dimension2 minitabDimension5">
+              <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">
               <figcaption class="textCenter title gotham">Data</figcaption>
             </figure>
           </a>
-          <a class="flex directColumn alignCenter" href="#">
-            <figure class="dimension2">
-              <img class="dimImg" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" alt="Création">
+          <a class="flex directColumn alignCenter test2" href="#">
+            <figure class="dimension2 minitabDimension5">
+              <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" alt="Création">
               <figcaption class="textCenter title gotham">Création</figcaption>
             </figure>
           </a>

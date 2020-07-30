@@ -104,7 +104,7 @@ textarea {
   background-color: deeppink; /*//this bgc is to test the block//*/
 }
 nav {
-  height: 12vh;
+  height: 9vh;
 }
 
 header {
@@ -216,14 +216,11 @@ a {
   opacity: 0.2;
 }
 
-
-
 /*///Header///*/
 
 header section p {
   margin-bottom: 1.5em;
 }
-
 
 /*///Main///*/
 
@@ -264,7 +261,7 @@ main section h2 {
   font-size: 2em;
 }
 
-/*///Second block///*/
+  /*///Second block///*/
 
 .dimension, .containp { /*//This classes target the images and paragraph below them//*/
   width: 70%;
@@ -280,13 +277,13 @@ main section h2 {
   font-size: 1.1em;
 }
 
-/*///Third block///*/
+  /*///Third block///*/
 
 .dimension2 {
   width: 55%;
 }
 
-/*///Last block///*/
+  /*///Last block///*/
 
 .article {
   width: 85%;
@@ -313,6 +310,102 @@ main section h2 {
 
 .marginLastA { /*///especially for last link///*/
   margin: 1.5em auto 3em auto;
+}
+
+@media screen and (min-width: 576px){
+  
+/*//Utility class//*/
+
+.minitabNone {
+  display: none;
+}
+
+.minitabInline {
+  display: inline;
+}
+
+.minitabBlock {
+  display: block;
+}
+
+.minitabFlex {
+  display: flex;
+}
+
+.minitabAround {
+  justify-content: space-around;
+}
+
+.minitabCenter {
+  justify-content: center;
+}
+
+
+.minitabAlign {
+  align-items: center;
+}
+
+/*//Second block main//*/
+
+/*//Because img have different size in 576px i create class ton contain them//*/
+
+.minitabDimDiv{
+  width: 90%;
+  margin: auto;
+}
+
+.minitabDimension {
+  width: 100%;
+}
+
+.minitabDimension2 {
+  width: 80%;
+}
+
+.minitabDimension3 {
+  width: 45%;
+}
+
+.minitabDimension4 {
+  width: 87%;
+}
+
+/*//Third block main//*/
+
+.minitabDimDiv2 {
+  width: 90%;
+  margin: auto;
+}
+
+.minitabDimension5 {
+  width: 80%;
+}
+
+.test2 {
+  width: 50%;
+  background-color: lightgreen;
+}
+.test3 {
+  width: 50%;
+  background-color: blue;
+}
+
+.test4 {
+  background-color: brown;
+}
+.abs1 {
+  position: relative;
+  left:5;
+}
+
+.abs2 {
+  position: absolute;
+  right:5;
+}
+
+
+
+
 }
 /* ==========================================================================
    Helper classes
