@@ -96,34 +96,31 @@ textarea {
   font-family: 'Mulish', sans-serif;
 }
 
+@font-face { 	
+  font-family: "Gotham Black";
+  src: url('Gotham\ Black\ Regular.ttf') format("truetype");
+}
+
 nav {
-  height: 10.5vh;
-  width: 90%;
-  margin: auto;
-  position: relative;
+  height: 10vh;
 }
 
 header {
   width: 90%;
-  margin: 2em auto;
-  font-size: 1.65em;
+  margin: 3em auto;
   padding-bottom: 0.5em;
-}
-
-h1 {
-  line-height: 0.9em;
-  font-weight: 1900;
+  font-size: 1.65em;
 }
 
 
 /*///Utility class///*/
 
 .police {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.titleColor {
+  font-family: 'Gotham Black', sans-serif;
+  font-weight: 400;
+  font-size: 1.7em;
   color:#162049;
+  line-height: 1em; 
 }
 
 .marginBot {
@@ -134,6 +131,14 @@ h1 {
   display:flex;
 }
 
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.columnReverse {
+  flex-direction: column-reverse;
+}
+
 .directColumn {
   flex-direction: column;
 }
@@ -142,7 +147,11 @@ h1 {
   align-items: center;
 }
 
-.spaceAround {
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyAround {
   justify-content: space-around ;
 }
 
@@ -151,7 +160,7 @@ h1 {
 }
 
 .bgLink {
-  padding: 0.3em 0.8em;
+  padding: 0.3em 1em;
   background-color: #4d22ff;
   border-radius: 0.9em;
   text-decoration: none;
@@ -163,27 +172,38 @@ h1 {
 
 /*///Nav///*/
 
-nav figure {
-  width: 35%;
+.divFigure {
+  height:100%;
+  position: relative;
+}
+
+.figureBurger {
   position: absolute;
-  right: 30%;
+  top: 20%;
+  left: 5%;
 }
 
-nav figure img {
-  width: 100%;
+.figureLogo {
+  position: absolute;
+  top: 20%;
+  left: 33%;
 }
 
-nav div {
-  width: 13%;
+.burger, .logo {
+  width: 80%;
 }
 
-nav div img {
-  width: 100%;
+.navBar {  
+  border: 1px solid grey;
+  opacity: 0.2;
 }
 
 /*///Header///*/
 
-
+@media screen and (min-width: 489px) {
+  nav {
+    height: 15vh;
+  }
 
 /* ==========================================================================
    Helper classes
