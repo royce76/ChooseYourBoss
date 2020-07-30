@@ -27,13 +27,13 @@
   <nav>
     <div class="divFigure flex">
       <figure class="figureBurger">
-        <img class="burger" src="https://img.icons8.com/ios/50/000000/menu.png"/ alt="Menu burger">
+        <img class="burger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="Menu burger">
       </figure>
       <figure class="figureLogo">
         <img class="logo" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" alt="logo chooseyourboss">
       </figure>
     </div>
-    <section><h6 class="navBar"></h6></section>
+    <div class="navBar"></div>
     <div class="none">
       <a href="#">Offres</a>
       <a href="#">Entreprises</a>
@@ -48,9 +48,9 @@
   <!--header = h1,p + figure-->
   <header>
     <section>
-      <h1 class="police">Le matching parfait est aussi professionnel</h1>
-      <p class="marginBot">Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta prochaine squad !</p>
-      <a href="#" class="bgLink">Je m'inscris</a>
+      <h1 class="gotham title">Le matching parfait est aussi professionnel</h1>
+      <p>Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta prochaine squad !</p>
+      <a href="#" class="bgLink colorWhite">Je m'inscris</a>
     </section>
     <figure class="none">
       <img src="img/man.png" alt="Photo d'un monsieur">
@@ -58,49 +58,50 @@
   </header>
   <main>
     <!--use div separate in 3 sections-->
-    <div>
-      <section>
-        <h3>Candidats</h3>
-        <p>152 000</p>
+    <div class="bgcMauve flex directColumn alignCenter">
+      <section class="flex directColumn alignCenter">
+        <p class="colorWhite gotham fontp">152 000</p>
+        <h3 class="color2fd gotham">Candidats</h3>        
       </section>
-      <section>
-        <h3>Rencontres</h3>
-        <p>473 000</p>
+      <section class="flex directColumn alignCenter">
+        <p class="colorWhite gotham fontp">473 000</p>
+        <h3 class="color2fd gotham">Rencontres</h3>
       </section>
-      <section>
-        <h3>Recruteurs</h3>
+      <section class="flex directColumn alignCenter">
+        <p class="colorWhite gotham fontp">13 300</p>
+        <h3 class="color2fd gotham">Recruteurs</h3>
       </section>
     </div>
     <!--section = h2,p + (article=>title + figure)*3-->
     <section>
-      <h2>L'algorithme travaille pour toi</h2>
-      <p>Accède à des matchings personnalisés tout en restant protégé et anonyme</p>
+      <h2 class="title gotham">L'algorithme travaille pour toi</h2>
+      <p class="h2p textCenter">Accède à des matchings personnalisés tout en restant protégé et anonyme</p>
       <div>
         <div>
-          <article>
-            <figure>
-              <img src="img/matching1.png" alt="personnalisation">
+          <article class="flex directColumn alignCenter">
+            <figure class="dimension">
+              <img class="dimImg" src="img/matching1.png" alt="personnalisation">
             </figure>
-            <h3>Personnalisation</h3>
-            <p>Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
+            <h3 class="gotham title">Personnalisation</h3>
+            <p class="h3p containp textJustify">Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
           </article>
-          <article>
-            <figure>
-              <img src="img/matching2.png" alt="3 en 1">
+          <article class="flex directColumn alignCenter">
+            <figure  class="dimension">
+              <img class="dimImg" src="img/matching2.png" alt="3 en 1">
             </figure>
-            <h3>3 en 1</h3>
-            <p>Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement aux offres qui te plaisent.</p>
+            <h3 class="gotham title">3 en 1</h3>
+            <p class="h3p containp textJustify">Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement aux offres qui te plaisent.</p>
           </article>
         </div>
         <article>
           <figure>
-            <img src="img/matching3.png" alt="Anonymat">
+            <img class="dimension" src="img/matching3.png" alt="Anonymat">
           </figure>
-          <h3>Anonymat</h3>
-          <p>Ton profil reste protégé et anonyme jusqu'à ta maise en relation avec le recruteur de ton choix, évitant ainsi toute sur-sollicitation.</p>
+          <h3 class="gotham title">Anonymat</h3>
+          <p class="h3p">Ton profil reste protégé et anonyme jusqu'à ta maise en relation avec le recruteur de ton choix, évitant ainsi toute sur-sollicitation.</p>
         </article>
       </div>
-      <a href="#">J'accède à mes matchings</a>
+      <a class="bgLink colorWhite" href="#">J'accède à mes matchings</a>
     </section>
     <!--section = h2,p + (figure(A))*5-->
     <section>
