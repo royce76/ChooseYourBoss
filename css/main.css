@@ -156,6 +156,10 @@ a {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .textCenter {
   text-align: center;
 }
@@ -175,7 +179,7 @@ a {
   color:#162049; 
 }
 
-.bgLink { /*//For the link below every part of the main and header//*/
+.bgLink { /*//For the link below every part of the main//*/
   padding: 0.3em 1em;
   background-color: #4d22ff;
   border-radius: 0.9em;
@@ -289,7 +293,7 @@ main section h2 {
   margin: 2.5em auto;
   background-color: #eceaf1;
   padding-top: 0.8em;
-  padding-bottom: 0.8em;
+  padding-bottom: 0.1em;
 }
 
 .divArticle {
