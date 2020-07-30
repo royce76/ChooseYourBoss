@@ -93,18 +93,18 @@ textarea {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Mulish', sans-serif;/* from google*/
 }
 
-@font-face { 	
+@font-face { 	/*///from the web site dafont///*/
   font-family: "Gotham Black";
   src: url('Gotham\ Black\ Regular.ttf') format("truetype");
 }
 .test {
-  background-color: deeppink;
+  background-color: deeppink; /*//this bgc is to test the block//*/
 }
 nav {
-  height: 11vh;
+  height: 12vh;
 }
 
 header {
@@ -120,8 +120,8 @@ h1 {
 }
 
 a {
-  text-decoration: none;
-  display:block;
+  text-decoration: none; /*// no dry here//*/
+  display:block;/*// no dry here//*/
 }
 
 /*///Utility class///*/
@@ -130,14 +130,6 @@ a {
 
 .flex {
   display:flex;
-}
-
-.justifyBetween {
-  justify-content: space-between;
-}
-
-.columnReverse {
-  flex-direction: column-reverse;
 }
 
 .directColumn {
@@ -174,7 +166,7 @@ a {
 
   /*///Police,color///*/
 
-.gotham {
+.gotham { /*//Use for many titles//*/
   font-family: 'Gotham Black', sans-serif;
 }
 
@@ -183,14 +175,14 @@ a {
   color:#162049; 
 }
 
-.bgLink {
+.bgLink { /*//For the link below every part of the main and header//*/
   padding: 0.3em 1em;
   background-color: #4d22ff;
   border-radius: 0.9em;
   font-weight: 500;
 }
 
-.colorWhite {
+.colorWhite { /*//For the link and first block main//*/
   color: #fff;
 }
 
@@ -201,6 +193,7 @@ a {
 .divFigure {
   height:100%;
   position: relative;
+  margin-bottom: 0.2em;
 }
 
 .figureBurger {
@@ -209,17 +202,12 @@ a {
   left: 5%;
 }
 
-.figureLogo {
-  position: absolute;
-  top: 20%;
-  left: 33%;
-}
-
-.burger, .logo {
+.burger, .logo { /*//The menu burger and logo belong to the divFigure//*/
   width: 80%;
 }
 
 .navBar { 
+  margin-top: 0.2em;
   border: 1px solid grey;
   opacity: 0.2;
 }
@@ -238,7 +226,7 @@ header section p {
 main section h2 {
   font-size: 2.2em;
   line-height: 1.1em;
-  text-align: center;
+  text-align: center; /*//no dry I win lines for all h2//*/
   margin-top: 1.2em;
 }
 
@@ -263,7 +251,7 @@ main section h2 {
   padding: 3em; 
 }
 
-.color2fd {
+.color2fd { /*//for "candidat", "rencontre" and "recruteur"//*/
   color: #2fd;
   margin: 0.5em;
 }
@@ -274,7 +262,7 @@ main section h2 {
 
 /*///Second block///*/
 
-.dimension, .containp {
+.dimension, .containp { /*//This classes target the images and paragraph below them//*/
   width: 70%;
 }
 
@@ -308,16 +296,18 @@ main section h2 {
   width: 85%;
   margin: auto;
 }
-article div section div h3 {
+
+.marginH3 { /*///To not pertubate the code I created class to target easily the h3 and h2///*/
   margin-bottom: 0.9em;
 }
-article div h2 {
+
+.marginLineH2 { /*///especially for last h2///*/
   margin: 1em auto;
   line-height: 1.1em;
   font-size: 2.3em;
 }
 
-.marginLastA {
+.marginLastA { /*///especially for last link///*/
   margin: 1.5em auto 3em auto;
 }
 /* ==========================================================================

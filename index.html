@@ -4,17 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Choose your boss</title>
-  <meta name="description" content="Les candidats postulent avec leur CV. Ils ont accès à une liste d'entreprise et choisissent leur employeur.">
+  <meta name="description" content="Les candidats postulent avec leur CV. Ils ont accès à une liste d'entreprises et choisissent leur employeur.">
   <meta name="keywords" content="candidat, CV, travail, entreprise, recruteur, boss, choose">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
+  <!--google font mulish-->
   <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  
   
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -24,12 +23,12 @@
 
 <body>
   <!--nav = logo + menu burger-->
-  <nav>
-    <div class="divFigure flex">
+  <nav class="flex directColumn justifyAround"><!--this display is necessary for 2 px-->
+    <div class="divFigure flex justifyCenter alignCenter">
       <figure class="figureBurger">
         <img class="burger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="Menu burger">
       </figure>
-      <figure class="figureLogo">
+      <figure class="figureLogo flex justifyCenter">
         <img class="logo" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" alt="logo chooseyourboss">
       </figure>
     </div>
@@ -45,7 +44,6 @@
       <a href="#">Vous êtes recruteur</a>
     </div>
   </nav>
-  
   <!--header = h1,p + figure-->
   <header>
     <section>
@@ -149,10 +147,10 @@
     <!--section = h2,p + article-->
     <article class="article">
      <div class="divArticle">
-        <h2 class="title gotham">Mérites-tu un meilleur salaire ?</h2>
+        <h2 class="marginLineH2 title gotham">Mérites-tu un meilleur salaire ?</h2>
         <section><!--use to display flex article and figure-->
           <div>
-            <h3 class="title gotham">Baromètre des salaire IT</h3>
+            <h3 class="marginH3 title gotham">Baromètre des salaire IT</h3>
             <p>Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et localisation.</p>
           </div>
           <figure class="none">
