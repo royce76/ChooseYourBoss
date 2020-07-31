@@ -103,8 +103,21 @@ textarea {
 .test {
   background-color: deeppink; /*//this bgc is to test the block//*/
 }
+
+.test2 {
+  background-color: lightgreen;
+}
+.test3 {
+  background-color: blue;
+}
+
+.test4 {
+  background-color: brown;
+}
+
 nav {
-  height: 9vh;
+  height: 10vh;
+  margin-top: 0.3em;
 }
 
 header {
@@ -197,17 +210,30 @@ a {
 .divFigure {
   height:100%;
   position: relative;
-  margin-bottom: 0.2em;
 }
 
 .figureBurger {
+  height: 100%;
+  width: 10%;
   position: absolute;
-  top: 20%;
   left: 5%;
 }
 
-.burger, .logo { /*//The menu burger and logo belong to the divFigure//*/
-  width: 80%;
+.figureLogo {
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  left: 40%;
+}
+
+.logo { /*//The logo belong to the divFigure//*/
+  height: 150px;
+  width: 120px;
+}
+
+.burger { /*//The menu burger belong to the divFigure//*/
+  height: 40px;
+  width: 40px;
 }
 
 .navBar { 
@@ -287,13 +313,14 @@ main section h2 {
 
 .article {
   width: 85%;
-  margin: 2.5em auto;
+  margin: 2em auto;
   background-color: #eceaf1;
-  padding-top: 0.8em;
-  padding-bottom: 0.1em;
+  padding-top: 0.5em;
+  padding-bottom: 1.8em;
 }
 
 .divArticle {
+  height: 100%;
   width: 85%;
   margin: auto;
 }
@@ -302,111 +329,265 @@ main section h2 {
   margin-bottom: 0.9em;
 }
 
+.marginph3 {
+  margin-bottom: 1.7em;
+}
+
 .marginLineH2 { /*///especially for last h2///*/
   margin: 1em auto;
   line-height: 1.1em;
   font-size: 2.3em;
 }
 
-.marginLastA { /*///especially for last link///*/
-  margin: 1.5em auto 3em auto;
+/*//this mediaquery is necessary to the last link to not grow.//*/
+@media screen and (min-width: 360px){
+
+  .inlineSalary {
+    display: inline;
+  }
+
 }
 
 @media screen and (min-width: 576px){
-  
-/*//Utility class//*/
 
-.minitabNone {
-  display: none;
+  /*//General rules//*/
+    
+  /*//Utility class//*/
+
+  .minitabrelative {
+    position: relative;
+  }
+
+  .minitabNone {
+    display: none;
+  }
+
+  .minitabInline {
+    display: inline;
+  }
+
+  .minitabBlock {
+    display: block;
+  }
+
+  .minitabFlex {
+    display: flex;
+  }
+
+  .minitabColumn {
+    flex-direction: column;
+  }
+
+  .minitabAround {
+    justify-content: space-around;
+  }
+
+  .minitabCenter {
+    justify-content: center;
+  }
+
+  .minitabAlign {
+    align-items: center;
+  }
+
+  .minitabDimDiv {
+    width: 90%;
+    margin: auto;
+  }
+
+  /*//Second block main//*/
+
+  /*//Because img have different size in 576px i create class ton contain them//*/
+
+  .minitabDimension {
+    width: 100%;
+  }
+
+  .minitabDimension2 {
+    width: 80%;
+  }
+
+  .minitabDimension3 {
+    width: 45%;
+  }
+
+  .minitabDimension4 {
+    width: 87%;
+  }
+
+  /*//Third block main//*/
+
+  .minitabHeight {
+    height: 38vh;
+  }
+
+  .minitabWidth50 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .minitabAbsoluteLeft {
+    position: absolute;
+    left: -1px;
+  }
+
+  .minitabAbsoluteRight {
+    position: absolute;
+    right: -1px;
+  }
+
+  .minitabDimension5 {
+    width: 80%;
+    height: 100%;
+  }
+
 }
 
-.minitabInline {
-  display: inline;
-}
+@media screen and (min-width: 768px) {
 
-.minitabBlock {
-  display: block;
-}
+  /*//General rules//*/
 
-.minitabFlex {
-  display: flex;
-}
+  nav {
+    height: 7vh;
+    margin-bottom: 9em;
+  }
 
-.minitabAround {
-  justify-content: space-around;
-}
+  /*//Utility class//*/
 
-.minitabCenter {
-  justify-content: center;
-}
+  .ipadRelative {
+    position: relative;
+  }
 
+  .ipadInitial {
+    position: initial;
+  }
 
-.minitabAlign {
-  align-items: center;
-}
+  .ipadNone {
+    display: none;
+  }
 
-/*//Second block main//*/
+  .ipadBlock {
+    display: block;
+  }
 
-/*//Because img have different size in 576px i create class ton contain them//*/
+  .ipadFlex {
+    display: flex;
+  }
 
-.minitabDimDiv{
-  width: 90%;
-  margin: auto;
-}
+  .ipadColumn {
+    flex-direction: column;
+  }
 
-.minitabDimension {
-  width: 100%;
-}
+  .ipadAlign {
+    align-items: center;
+  }
 
-.minitabDimension2 {
-  width: 80%;
-}
+  .ipadRow {
+    flex-direction: row;
+  }
 
-.minitabDimension3 {
-  width: 45%;
-}
+  .ipadCenter {
+    justify-content: center;
+  }
 
-.minitabDimension4 {
-  width: 87%;
-}
+  .ipadAround {
+    justify-content: space-around;
+  }
 
-/*//Third block main//*/
+  /*//Commun rules//*/
 
-.minitabDimDiv2 {
-  width: 90%;
-  margin: auto;
-}
+    /*//First block//*/
 
-.minitabDimension5 {
-  width: 80%;
-}
+  .ipadMargintop {
+    margin-top: 8em;
+  }
 
-.test2 {
-  width: 50%;
-  background-color: lightgreen;
-}
-.test3 {
-  width: 50%;
-  background-color: blue;
-}
+    /*//Second block//*/
 
-.test4 {
-  background-color: brown;
-}
-.abs1 {
-  position: relative;
-  left:5;
-}
+    /*//I use class from break point 576px//*/
 
-.abs2 {
-  position: absolute;
-  right:5;
-}
+  .minitabDimension {
+    width: 80%;
+  }
 
+  .minitabDimension2 {
+    width: 64%;
+  }
 
+  .minitabDimension3 {
+    width: 35%;
+  }
 
+  /*//Third block//*/
 
-}
+  .ipadMargin {
+    width: 90%;
+    margin: auto;
+  }
+
+  .minitabHeight {
+    height: 30vh;
+  }
+
+  .minitabDimension5 { /* for the 3 img up*/
+    width: 110%;
+  }
+
+  .minitabDimension6 { /* for the 2 img down*/
+    width: 35%;
+  }
+
+  .ipadLeftAboslute {
+    position: absolute; /*// for the img up left//*/
+    left: 2em;
+  }
+
+  .ipadRightAboslute { /*//for the img up right//*/
+    position: absolute;
+    right: 1em;
+  }
+
+  .ipadMarginUp {
+    margin-top: 1em;
+  }
+
+  .ipadLeftAboslute2 {
+    position: absolute; /*// for the img down left//*/
+    left: 8em;
+    top: -2em;
+  }
+
+  .ipadRightAboslute2 {
+    position: absolute; /*// for the img down right//*/
+    right: 8em;
+    top: -2em;
+  }
+
+  .marginLinkInitial { /*// I let this utility class here because it is specific to this part//*/
+    margin: initial;
+  }
+
+  .marginBotLink {
+    margin-bottom: 2.5em;
+  }
+
+  .heightInitial {  /*// I let this utility class here because it is specific to this part//*/
+    height: initial;
+  }
+
+  .ipadDownheight {
+    height: 26vh;
+  }
+
+  /*//Last block//*/
+
+  .divArticle {
+    height: 100%;
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+}   
 /* ==========================================================================
    Helper classes
    ========================================================================== */
