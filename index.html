@@ -24,11 +24,11 @@
 <body>
   <!--nav = logo + menu burger-->
   <nav class="flex directColumn justifyAround"><!--this display is necessary for 2 px-->
-    <div class="divFigure flex justifyCenter alignCenter">
-      <figure class="figureBurger">
+    <div class="divFigure flex">
+      <figure class="figureBurger flex alignCenter">
         <img class="burger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="Menu burger">
       </figure>
-      <figure class="figureLogo flex justifyCenter">
+      <figure class="figureLogo flex alignCenter">
         <img class="logo" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" alt="logo chooseyourboss">
       </figure>
     </div>
@@ -106,45 +106,46 @@
     <section class="flex directColumn alignCenter">
       <h2 class="title gotham">Tous les jobs informatiques et numériques</h2>
       <p class="h2p textCenter">Découvre les dernières offres d'emploi tech', produit, data, marketing et design</p>
-      <div class="minitabDimDiv2 test"><!--use to contain the 5 figure(A) for break point 1200 px-->
+      <!--minitabflex is necessary to not separate too much the img-->
+      <div class="minitabDimDiv minitabFlex minitabColumn minitabCenter"><!--use to contain the 5 figure(A) for break point 1200 px-->
         <div><!--use to contain 3 figure(A) for break point 768 px with display none for the fourth img-->
-          <div class="test4 minitabFlex"><!--use to contain 2 figure(A) for break point 576 px-->
-            <a class="flex directColumn alignCenter test2" href="#">
-              <figure class="dimension2 minitabDimension5">
+          <div class="minitabFlex minitabHeight"><!--use to contain 2 figure(A) for break point 576 px-->
+            <a class="flex directColumn alignCenter minitabWidth50 minitabrelative" href="#">
+              <figure class="dimension2 minitabDimension5 minitabAbsoluteRight">
                 <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/tech.svg" alt="Tech">
                 <figcaption class="textCenter title gotham">Tech</figcaption> 
               </figure> 
             </a>
-            <a class="flex directColumn alignCenter test3" href="#">
-              <figure class="dimension2 minitabDimension5">
+            <a class="flex directColumn alignCenter minitabWidth50 minitabrelative" href="#">
+              <figure class="dimension2 minitabDimension5 minitabAbsoluteLeft">
                 <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/produit.svg" alt="Produit">
                 <figcaption class="textCenter title gotham">Produit</figcaption>
               </figure>
             </a>
           </div>
-          <div class="test4 minitabFlex"><!--use to contain 2 figure(A) for break point 576 px-->
-            <a class="flex directColumn alignCenter test2" href="#">
-              <figure class="dimension2 minitabDimension5">
+          <div class="minitabFlex minitabHeight"><!--use to contain 2 figure(A) for break point 576 px-->
+            <a class="flex directColumn alignCenter minitabWidth50 minitabrelative" href="#">
+              <figure class="dimension2 minitabDimension5 minitabAbsoluteRight">
                 <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/marketing.svg" alt="Marketing">
                 <figcaption class="textCenter title gotham">Marketing</figcaption>
               </figure>
             </a>
-            <a class="flex directColumn alignCenter test3" href="#"><!--desactivate only in break point 1200px-->
-              <figure class="dimension2 minitabDimension5">
+            <a class="flex directColumn alignCenter minitabWidth50 minitabrelative" href="#"><!--desactivate only in break point 1200px-->
+              <figure class="dimension2 minitabDimension5 minitabAbsoluteLeft">
                 <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">
                 <figcaption class="textCenter title gotham">Data</figcaption>
               </figure>
             </a>
           </div>
         </div>
-        <div class="minitabFlex minitabCenter">
-          <a class="flex directColumn alignCenter none test3" href="#"> <!--activate only in break point 1200px-->
+        <div class="minitabFlex minitabCenter minitabHeight">
+          <a class="flex directColumn alignCenter none minitabWidth50" href="#"> <!--activate only in break point 1200px-->
             <figure class="dimension2 minitabDimension5">
               <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">
               <figcaption class="textCenter title gotham">Data</figcaption>
             </figure>
           </a>
-          <a class="flex directColumn alignCenter test2" href="#">
+          <a class="flex directColumn alignCenter minitabWidth50" href="#">
             <figure class="dimension2 minitabDimension5">
               <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" alt="Création">
               <figcaption class="textCenter title gotham">Création</figcaption>
@@ -158,16 +159,16 @@
     <article class="article">
      <div class="divArticle">
         <h2 class="marginLineH2 title gotham">Mérites-tu un meilleur salaire ?</h2>
-        <section><!--use to display flex article and figure-->
+        <section><!--use to display flex article and figure at 1200px-->
           <div>
             <h3 class="marginH3 title gotham">Baromètre des salaire IT</h3>
-            <p>Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et localisation.</p>
+            <p class=" marginph3">Découvre le salaire des différents métiers informatiques et numériques par niveau d'expérience et localisation.</p>
           </div>
+          <a class="bgLink colorWhite lienFont inlineSalary" href="#">Je découvre mon salaire</a>
           <figure class="none">
             <img src="img/salaire.svg" alt="Salaire">
           </figure>
         </section>
-        <a class="bgLink colorWhite marginLastA lienFont" href="#">Je découvre mon salaire</a>
      </div>
     </article>
   </main>

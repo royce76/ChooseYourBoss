@@ -103,8 +103,21 @@ textarea {
 .test {
   background-color: deeppink; /*//this bgc is to test the block//*/
 }
+
+.test2 {
+  background-color: lightgreen;
+}
+.test3 {
+  background-color: blue;
+}
+
+.test4 {
+  background-color: brown;
+}
+
 nav {
-  height: 9vh;
+  height: 10vh;
+  margin-top: 0.2em;
 }
 
 header {
@@ -197,21 +210,32 @@ a {
 .divFigure {
   height:100%;
   position: relative;
-  margin-bottom: 0.2em;
 }
 
 .figureBurger {
-  position: absolute;
-  top: 20%;
-  left: 5%;
+  height: 100%;
+  width: 10%;
 }
 
-.burger, .logo { /*//The menu burger and logo belong to the divFigure//*/
-  width: 80%;
+.figureLogo {
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  left: 40%;
+}
+
+.logo { /*//The logo belong to the divFigure//*/
+  height: 150px;
+  width: 120px;
+}
+
+.burger { /*//The menu burger belong to the divFigure//*/
+  height: 40px;
+  width: 40px;
+  margin: auto;
 }
 
 .navBar { 
-  margin-top: 0.2em;
   border: 1px solid grey;
   opacity: 0.2;
 }
@@ -287,13 +311,14 @@ main section h2 {
 
 .article {
   width: 85%;
-  margin: 2.5em auto;
+  margin: 2em auto;
   background-color: #eceaf1;
-  padding-top: 0.8em;
-  padding-bottom: 0.1em;
+  padding-top: 0.5em;
+  padding-bottom: 1.8em;
 }
 
 .divArticle {
+  height: 100%;
   width: 85%;
   margin: auto;
 }
@@ -302,109 +327,118 @@ main section h2 {
   margin-bottom: 0.9em;
 }
 
+.marginph3 {
+  margin-bottom: 1.7em;
+}
+
 .marginLineH2 { /*///especially for last h2///*/
   margin: 1em auto;
   line-height: 1.1em;
   font-size: 2.3em;
 }
 
-.marginLastA { /*///especially for last link///*/
-  margin: 1.5em auto 3em auto;
+/*//this mediaquery is necessary to the last link to not grow.//*/
+@media screen and (min-width: 360px){
+
+  .inlineSalary {
+    display: inline;
+  }
+
 }
 
 @media screen and (min-width: 576px){
-  
-/*//Utility class//*/
 
-.minitabNone {
-  display: none;
-}
+  /*//General rules//*/
+    
+  /*//Utility class//*/
 
-.minitabInline {
-  display: inline;
-}
+  .minitabrelative {
+    position: relative;
+  }
 
-.minitabBlock {
-  display: block;
-}
+  .minitabNone {
+    display: none;
+  }
 
-.minitabFlex {
-  display: flex;
-}
+  .minitabInline {
+    display: inline;
+  }
 
-.minitabAround {
-  justify-content: space-around;
-}
+  .minitabBlock {
+    display: block;
+  }
 
-.minitabCenter {
-  justify-content: center;
-}
+  .minitabFlex {
+    display: flex;
+  }
 
+  .minitabColumn {
+    flex-direction: column;
+  }
 
-.minitabAlign {
-  align-items: center;
-}
+  .minitabAround {
+    justify-content: space-around;
+  }
 
-/*//Second block main//*/
-
-/*//Because img have different size in 576px i create class ton contain them//*/
-
-.minitabDimDiv{
-  width: 90%;
-  margin: auto;
-}
-
-.minitabDimension {
-  width: 100%;
-}
-
-.minitabDimension2 {
-  width: 80%;
-}
-
-.minitabDimension3 {
-  width: 45%;
-}
-
-.minitabDimension4 {
-  width: 87%;
-}
-
-/*//Third block main//*/
-
-.minitabDimDiv2 {
-  width: 90%;
-  margin: auto;
-}
-
-.minitabDimension5 {
-  width: 80%;
-}
-
-.test2 {
-  width: 50%;
-  background-color: lightgreen;
-}
-.test3 {
-  width: 50%;
-  background-color: blue;
-}
-
-.test4 {
-  background-color: brown;
-}
-.abs1 {
-  position: relative;
-  left:5;
-}
-
-.abs2 {
-  position: absolute;
-  right:5;
-}
+  .minitabCenter {
+    justify-content: center;
+  }
 
 
+  .minitabAlign {
+    align-items: center;
+  }
 
+  .minitabDimDiv {
+    width: 90%;
+    margin: auto;
+  }
+
+  /*//Second block main//*/
+
+  /*//Because img have different size in 576px i create class ton contain them//*/
+
+  .minitabDimension {
+    width: 100%;
+  }
+
+  .minitabDimension2 {
+    width: 80%;
+  }
+
+  .minitabDimension3 {
+    width: 45%;
+  }
+
+  .minitabDimension4 {
+    width: 87%;
+  }
+
+  /*//Third block main//*/
+
+  .minitabHeight {
+    height: 38vh;
+  }
+
+  .minitabWidth50 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .minitabAbsoluteLeft {
+    position: absolute;
+    left: -1px;
+  }
+
+  .minitabAbsoluteRight {
+    position: absolute;
+    right: -1px;
+  }
+
+  .minitabDimension5 {
+    width: 80%;
+    height: 100%;
+  }
 
 }
 /* ==========================================================================
