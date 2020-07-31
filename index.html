@@ -24,41 +24,43 @@
 <body>
   <!--nav = logo + menu burger-->
   <nav class="flex directColumn justifyAround"><!--this display is necessary for 2 px-->
-    <div class="divFigure flex">
-      <figure class="figureBurger flex alignCenter">
-        <img class="burger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="Menu burger">
-      </figure>
-      <figure class="figureLogo flex alignCenter">
-        <img class="logo" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" alt="logo chooseyourboss">
-      </figure>
+    <div class="divFigure pcFlex pcBetween pcMarginLogo">
+      <div>
+        <figure class="figureBurger flex alignCenter pcNone">
+          <img class="burger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="Menu burger">
+        </figure>
+        <figure class="figureLogo flex alignCenter">
+          <a href="#"><img class="logo" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/logos/logo-2019.svg" alt="logo chooseyourboss"></a>
+        </figure>
+      </div>
+      <div class="none pcBlock pcFlex pcAlign pcFont">
+        <a class="pcMargin" href="#">Offres</a>
+        <a class="pcMargin" href="#">Entreprises</a>
+        <a class="pcMargin" href="#">Salaires</a>
+        <a class="pcMargin" href="#">Évènements</a>
+        <a class="pcMargin" href="#">Blog</a>
+        <a class="pcMargin" href="#">Connexion</a>
+        <a class="pcMargin bgLink colorWhite" href="#">Inscription</a>
+        <a class="pcMargin" href="#">Vous êtes recruteur</a>
+      </div>
     </div>
     <div class="navBar"></div>
-    <div class="none">
-      <a href="#">Offres</a>
-      <a href="#">Entreprises</a>
-      <a href="#">Salaires</a>
-      <a href="#">Évènements</a>
-      <a href="#">Blog</a>
-      <a href="#">Connexion</a>
-      <a href="#">Inscription</a>
-      <a href="#">Vous êtes recruteur</a>
-    </div>
   </nav>
   <!--header = h1,p + figure-->
-  <header>
+  <header class="pcFlex">
     <section>
       <h1 class="gotham title">Le matching parfait est aussi professionnel</h1>
       <p>Découvre quelles offres d'emploi informatique et numérique matchent avec ton profil et choisis ta prochaine squad !</p>
       <a href="#" class="bgLink colorWhite inline">Je m'inscris</a>
     </section>
-    <figure class="none">
+    <figure class="none pcBlock">
       <img src="img/man.png" alt="Photo d'un monsieur">
     </figure>
   </header>
   <main>
     <!--use div separate in 3 sections-->
-    <div class="bgcMauve flex directColumn alignCenter ipadRow ipadAround ipadMargintop">
-      <section class="flex directColumn alignCenter">
+    <div class="bgcMauve flex directColumn alignCenter ipadRow ipadAround ipadMargintop pcHeightBandeau pcRelative">
+      <section class="flex directColumn alignCenter pcSection1">
         <p class="colorWhite gotham fontp">152 000</p>
         <h3 class="color2fd gotham">Candidats</h3>        
       </section>
@@ -66,7 +68,7 @@
         <p class="colorWhite gotham fontp">473 000</p>
         <h3 class="color2fd gotham">Rencontres</h3>
       </section>
-      <section class="flex directColumn alignCenter">
+      <section class="flex directColumn alignCenter pcSection3">
         <p class="colorWhite gotham fontp">13 300</p>
         <h3 class="color2fd gotham">Recruteurs</h3>
       </section>
@@ -76,23 +78,30 @@
       <h2 class="title gotham">L'algorithme travaille pour toi</h2>
       <p class="h2p textCenter">Accède à des matchings personnalisés tout en restant protégé et anonyme</p>
       <div class="minitabDimDiv">
-        <div class="minitabFlex">
-          <article class="flex directColumn alignCenter">
+        <div class="minitabFlex pcDivWidth pcAround">
+          <article class="flex directColumn alignCenter pcDimension">
             <figure class="dimension minitabDimension">
               <img class="dimImg" src="img/matching1.png" alt="personnalisation">
             </figure>
             <h3 class="gotham title">Personnalisation</h3>
             <p class="h3p containp textJustify">Notre algorithme de matching sélectionne pour toi les projets qui te correspondent vraiment.</p>
           </article>
-          <article class="flex directColumn alignCenter">
+          <article class="flex directColumn alignCenter pcDimension">
             <figure  class="dimension minitabDimension2">
               <img class="dimImg" src="img/matching2.png" alt="3 en 1">
             </figure>
             <h3 class="gotham title">3 en 1</h3>
             <p class="h3p containp textJustify">Tu as le pouvoir d'accepter les matchings, les demandes directes ou postuler directement aux offres qui te plaisent.</p>
           </article>
+          <article class="flex directColumn alignCenter none pcBlock pcDimension pcFlex">
+            <figure class="dimension minitabDimension3">
+              <img class="dimImg" src="img/matching3.png" alt="Anonymat">
+            </figure>
+            <h3 class="gotham title">Anonymat</h3>
+            <p class="h3p containp minitabDimension4 textJustify">Ton profil reste protégé et anonyme jusqu'à ta maise en relation avec le recruteur de ton choix, évitant ainsi toute sur-sollicitation.</p>
+          </article>
         </div>
-        <article class="flex directColumn alignCenter">
+        <article class="flex directColumn alignCenter pcNone">
           <figure class="dimension minitabDimension3">
             <img class="dimImg" src="img/matching3.png" alt="Anonymat">
           </figure>
@@ -107,8 +116,8 @@
       <h2 class="title gotham minitabDimDiv ipadMargin">Tous les jobs informatiques et numériques</h2>
       <p class="h2p textCenter minitabDimDiv ipadMargin">Découvre les dernières offres d'emploi tech', produit, data, marketing et design</p>
       <!--minitabflex is necessary to not separate too much the img-->
-      <div class="minitabDimDiv minitabFlex minitabColumn minitabCenter ipadMarginUp"><!--use to contain the 5 figure(A) for break point 1200 px-->
-        <div class="minitabFlex minitabHeight ipadRelative"><!--use to contain 2 figure(A) for break point 576 px-->
+      <div class="minitabDimDiv minitabFlex minitabColumn minitabCenter ipadMarginUp">
+        <div class="minitabFlex minitabHeight ipadRelative"><!--use to contain the 5 figure(A) for break point 1200 px-->
           <a class="flex directColumn alignCenter minitabWidth50 minitabrelative" href="#">
             <figure class="dimension2 minitabDimension5 minitabAbsoluteRight ipadFlex ipadColumn ipadAlign ipadLeftAboslute">
               <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/tech.svg" alt="Tech">
@@ -127,6 +136,18 @@
               <figcaption class="textCenter title gotham">Marketing</figcaption>
             </figure>
           </a>
+          <a class="flex directColumn alignCenter minitabWidth50 minitabrelative none pcBlock" href="#">
+            <figure class="dimension2 minitabDimension5 minitabAbsoluteLeft ipadFlex ipadColumn ipadAlign">
+              <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">
+              <figcaption class="textCenter title gotham">Data</figcaption>
+            </figure>
+          </a>
+          <a class="flex directColumn alignCenter minitabWidth50 none pcBlock" href="#">
+            <figure class="dimension2 minitabDimension5 minitabDimension6 ipadFlex ipadColumn ipadAlign ipadRightAboslute2">
+              <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/design.svg" alt="Création">
+              <figcaption class="textCenter title gotham">Création</figcaption>
+            </figure>
+          </a>
         </div>
         <div class="minitabFlex minitabHeight ipadNone"><!--use to contain 2 figure(A) for break point 576 px-->
           <a class="flex directColumn alignCenter minitabWidth50 minitabrelative" href="#">
@@ -135,14 +156,14 @@
               <figcaption class="textCenter title gotham">Marketing</figcaption>
             </figure>
           </a>
-          <a class="flex directColumn alignCenter minitabWidth50 minitabrelative" href="#"><!--desactivate only in break point 768px-->
+          <a class="flex directColumn alignCenter minitabWidth50 minitabrelative" href="#">
             <figure class="dimension2 minitabDimension5 minitabAbsoluteLeft ipadFlex ipadColumn ipadAlign">
               <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">
               <figcaption class="textCenter title gotham">Data</figcaption>
             </figure>
           </a>
         </div>
-        <div class="minitabFlex minitabCenter minitabHeight ipadRelative heightInitial ipadDownheight">
+        <div class="minitabFlex minitabCenter minitabHeight ipadRelative heightInitial ipadDownheight pcNone">
           <a class="flex directColumn alignCenter none minitabWidth50 ipadBlock" href="#"> <!--activate in break point 768px-->
             <figure class="dimension2 minitabDimension6 ipadFlex ipadColumn ipadAlign ipadLeftAboslute2">
               <img class="dimImg minitabDimension" src="https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/home/visu-metiers/DATA.svg" alt="Data">

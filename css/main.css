@@ -134,7 +134,7 @@ h1 {
 
 a {
   text-decoration: none; /*// no dry here//*/
-  display:block;/*// no dry here//*/
+  display: block;/*// no dry here//*/
 }
 
 /*///Utility class///*/
@@ -217,6 +217,7 @@ a {
   width: 10%;
   position: absolute;
   left: 5%;
+  top: 5%;
 }
 
 .figureLogo {
@@ -224,7 +225,7 @@ a {
   width: 20%;
   position: absolute;
   left: 40%;
-}
+} 
 
 .logo { /*//The logo belong to the divFigure//*/
   height: 150px;
@@ -588,6 +589,140 @@ main section h2 {
   }
 
 }   
+
+@media screen and (min-width: 1200px) {
+
+  /*Utility class*/
+
+  .pcBlock {
+    display: block;
+  }
+
+  .pcNone {
+    display: none;
+  }
+
+  .pcRelative {
+    position: relative;
+  }
+
+  .pcFlex {
+    display: flex;
+  }
+
+  .pcBetween {
+    justify-content: space-between;
+  }
+
+  .pcAround {
+    justify-content: space-around;
+  }
+
+  .pcAlign {
+    align-items: center;
+  }
+
+  .pcMargin {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  /*//nav//*/
+
+  .pcFont {
+    font-size: 1.1em;
+  }
+
+  .figureLogo { /*//I initial the logo to put at flex start position//*/
+    height: 100%;
+    width: initial;
+    position: initial;
+  }
+  
+  .pcMarginLogo {
+    margin-left: 1.5em;
+  }
+
+  .divFigure {
+    height:100%;
+    position: initial;
+  }
+
+  /*//header//*/
+
+  header {
+    width: 120vh;
+    height: 50vh;
+  }
+
+  header figure, header section {
+    width: 100%;
+    height: 100%;
+  }
+
+  header figure img {
+    width: 90%;
+    height: 90%;
+  }
+
+  /*//first block//*/
+
+  .pcSection1 {
+    position: absolute;
+    left: 33em;
+  }
+
+  .pcSection3 {
+    position: absolute;
+    right: 33em;
+  }
+
+  .pcHeightBandeau {
+    height: 10vh;
+  }
+
+  /*//Second block//*/
+
+  .minitabDimension {
+    width: 55%;
+  }
+
+  .minitabDimension2 {
+    width: 44%;
+  }
+
+  .minitabDimension3 {
+    width: 38%;
+  }
+
+  .containp { /*//for paragraph third img//*/
+    width: 70%;
+  }
+
+  .dimension {
+    width: 65%;
+  }
+
+  .pcDimension {
+    width: 33%;
+  }
+
+  .minitabDimension4 {
+    width: 60%;
+  }
+
+  .pcDivWidth {
+    width: 120vh;
+    margin: auto;
+  }
+
+  /*//Third block//*/
+
+  .minitabDimension6 { /* for the 2 img down*/
+    width: 10%;
+  }
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
