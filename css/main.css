@@ -117,7 +117,7 @@ textarea {
 
 nav {
   height: 10vh;
-  margin-top: 0.2em;
+  margin-top: 0.3em;
 }
 
 header {
@@ -215,6 +215,8 @@ a {
 .figureBurger {
   height: 100%;
   width: 10%;
+  position: absolute;
+  left: 5%;
 }
 
 .figureLogo {
@@ -232,10 +234,10 @@ a {
 .burger { /*//The menu burger belong to the divFigure//*/
   height: 40px;
   width: 40px;
-  margin: auto;
 }
 
 .navBar { 
+  margin-top: 0.2em;
   border: 1px solid grey;
   opacity: 0.2;
 }
@@ -384,7 +386,6 @@ main section h2 {
     justify-content: center;
   }
 
-
   .minitabAlign {
     align-items: center;
   }
@@ -441,6 +442,152 @@ main section h2 {
   }
 
 }
+
+@media screen and (min-width: 768px) {
+
+  /*//General rules//*/
+
+  nav {
+    height: 7vh;
+    margin-bottom: 9em;
+  }
+
+  /*//Utility class//*/
+
+  .ipadRelative {
+    position: relative;
+  }
+
+  .ipadInitial {
+    position: initial;
+  }
+
+  .ipadNone {
+    display: none;
+  }
+
+  .ipadBlock {
+    display: block;
+  }
+
+  .ipadFlex {
+    display: flex;
+  }
+
+  .ipadColumn {
+    flex-direction: column;
+  }
+
+  .ipadAlign {
+    align-items: center;
+  }
+
+  .ipadRow {
+    flex-direction: row;
+  }
+
+  .ipadCenter {
+    justify-content: center;
+  }
+
+  .ipadAround {
+    justify-content: space-around;
+  }
+
+  /*//Commun rules//*/
+
+    /*//First block//*/
+
+  .ipadMargintop {
+    margin-top: 8em;
+  }
+
+    /*//Second block//*/
+
+    /*//I use class from break point 576px//*/
+
+  .minitabDimension {
+    width: 80%;
+  }
+
+  .minitabDimension2 {
+    width: 64%;
+  }
+
+  .minitabDimension3 {
+    width: 35%;
+  }
+
+  /*//Third block//*/
+
+  .ipadMargin {
+    width: 90%;
+    margin: auto;
+  }
+
+  .minitabHeight {
+    height: 30vh;
+  }
+
+  .minitabDimension5 { /* for the 3 img up*/
+    width: 110%;
+  }
+
+  .minitabDimension6 { /* for the 2 img down*/
+    width: 35%;
+  }
+
+  .ipadLeftAboslute {
+    position: absolute; /*// for the img up left//*/
+    left: 2em;
+  }
+
+  .ipadRightAboslute { /*//for the img up right//*/
+    position: absolute;
+    right: 1em;
+  }
+
+  .ipadMarginUp {
+    margin-top: 1em;
+  }
+
+  .ipadLeftAboslute2 {
+    position: absolute; /*// for the img down left//*/
+    left: 8em;
+    top: -2em;
+  }
+
+  .ipadRightAboslute2 {
+    position: absolute; /*// for the img down right//*/
+    right: 8em;
+    top: -2em;
+  }
+
+  .marginLinkInitial { /*// I let this utility class here because it is specific to this part//*/
+    margin: initial;
+  }
+
+  .marginBotLink {
+    margin-bottom: 2.5em;
+  }
+
+  .heightInitial {  /*// I let this utility class here because it is specific to this part//*/
+    height: initial;
+  }
+
+  .ipadDownheight {
+    height: 26vh;
+  }
+
+  /*//Last block//*/
+
+  .divArticle {
+    height: 100%;
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+}   
 /* ==========================================================================
    Helper classes
    ========================================================================== */
