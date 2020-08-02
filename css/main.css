@@ -143,6 +143,20 @@
     text-decoration: none; /*// no dry here//*/
     display: block;/*// no dry here//*/
   }
+
+  .sticky {
+    font-size: 1.2em;
+    background-color: #4d22ff;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stickyDiv {
+    height: 8vh;
+    position: sticky;
+    bottom: 0;
+  }
   
   /*///Utility class///*/
   
