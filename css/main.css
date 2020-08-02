@@ -11,976 +11,907 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/*///Mobile first///*/
-
-/*///General rules///*/
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Mulish', sans-serif;/* from google*/
-}
-
-@font-face { 	/*///from the web site dafont///*/
-  font-family: "Gotham Black";
-  src: url('Gotham\ Black\ Regular.ttf') format("truetype");
-}
-.test {
-  background-color: deeppink; /*//this bgc is to test the block//*/
-}
-
-.test2 {
-  background-color: lightgreen;
-}
-.test3 {
-  background-color: blue;
-}
-
-.test4 {
-  background-color: brown;
-}
-
-nav {
-  height: 10vh;
-  margin-top: 0.3em;
-}
-
-header {
-  width: 90%;
-  margin: 1.9em auto 2.2em auto;
-  padding-bottom: 0.5em;
-  font-size: 1.65em;
-}
-
-h1 {
-  font-size: 1.7em;
-  line-height: 1em;
-}
-
-a {
-  text-decoration: none; /*// no dry here//*/
-  display: block;/*// no dry here//*/
-}
-
-/*///Utility class///*/
-
-  /*///Position///*/
-
-.flex {
-  display:flex;
-}
-
-.directColumn {
-  flex-direction: column;
-}
-
-.alignCenter {
-  align-items: center;
-}
-
-.justifyCenter {
-  justify-content: center;
-}
-
-.justifyAround {
-  justify-content: space-around ;
-}
-
-.none {
-  display: none;
-}
-
-.block {
-  display: block;
-}
-
-.inline {
-  display: inline;
-}
-
-.textCenter {
-  text-align: center;
-}
-
-.textJustify {
-  text-align: justify;
-}
-
-  /*///Police,color///*/
-
-.gotham { /*//Use for many titles//*/
-  font-family: 'Gotham Black', sans-serif;
-}
-
-.title {
-  font-weight: 400;
-  color:#162049; 
-}
-
-.bgLink { /*//For the link below every part of the main//*/
-  padding: 0.3em 1em;
-  background-color: #4d22ff;
-  border-radius: 0.9em;
-  font-weight: 500;
-}
-
-.colorWhite { /*//For the link and first block main//*/
-  color: #fff;
-}
-
-/*///Common rules///*/
-
-/*///Nav///*/
-
-.divFigure {
-  height:100%;
-  position: relative;
-}
-
-.figureBurger {
-  height: 100%;
-  width: 10%;
-  position: absolute;
-  left: 5%;
-  top: 5%;
-}
-
-.figureLogo {
-  height: 100%;
-  width: 20%;
-  position: absolute;
-  left: 40%;
-} 
-
-.logo { /*//The logo belong to the divFigure//*/
-  height: 150px;
-  width: 120px;
-}
-
-.burger { /*//The menu burger belong to the divFigure//*/
-  height: 40px;
-  width: 40px;
-}
-
-.navBar { 
-  margin-top: 0.2em;
-  border: 1px solid grey;
-  opacity: 0.2;
-}
-
-/*///Header///*/
-
-header section p {
-  margin-bottom: 1.5em;
-}
-
-/*///Main///*/
-
-main section h2 {
-  font-size: 2.2em;
-  line-height: 1.1em;
-  text-align: center; /*//no dry I win lines for all h2//*/
-  margin-top: 1.2em;
-}
-
-.h2p { /*paragraph folow by h2*/
-  font-size: 1.65em;
-  line-height: 1em;
-  margin: 0.5em;
-}
-
-.lienMargin {
-  margin: 2.5em auto 1.5em auto;
-}
-
-.lienFont {
-  font-size: 1.25em;
-}
-
-  /*///First block main///*/
-
-.bgcMauve {
-  background-color: #2b345d;
-  padding: 3em; 
-}
-
-.color2fd { /*//for "candidat", "rencontre" and "recruteur"//*/
-  color: #2fd;
-  margin: 0.5em;
-}
-
-.fontp {
-  font-size: 2em;
-}
-
-  /*///Second block///*/
-
-.dimension, .containp { /*//This classes target the images and paragraph below them//*/
-  width: 70%;
-}
-
-.dimImg {
-  width: 100%;
-  margin-top: 0.7em;
-  margin-bottom: 1em;
-}
-
-.h3p { /*paragraph folow by h3*/
-  font-size: 1.1em;
-}
-
-  /*///Third block///*/
-
-.dimension2 {
-  width: 55%;
-}
-
-  /*///Last block///*/
-
-.article {
-  width: 85%;
-  margin: 2em auto;
-  background-color: #eceaf1;
-  padding-top: 0.5em;
-  padding-bottom: 1.8em;
-}
-
-.divArticle {
-  height: 100%;
-  width: 85%;
-  margin: auto;
-}
-
-.marginH3 { /*///To not pertubate the code I created class to target easily the h3 and h2///*/
-  margin-bottom: 0.9em;
-}
-
-.marginph3 {
-  margin-bottom: 1.7em;
-}
-
-.marginLineH2 { /*///especially for last h2///*/
-  margin: 1em auto;
-  line-height: 1.1em;
-  font-size: 2.3em;
-  text-align: left;
-}
-
-/*//this mediaquery is necessary to the last link to not grow.//*/
-@media screen and (min-width: 360px){
-
-  .inlineSalary {
-    display: inline;
-  }
-
-}
-
-@media screen and (min-width: 576px){
-
-  /*//General rules//*/
-    
-  /*//Utility class//*/
-
-  .minitabrelative {
-    position: relative;
-  }
-
-  .minitabNone {
-    display: none;
-  }
-
-  .minitabInline {
-    display: inline;
-  }
-
-  .minitabBlock {
-    display: block;
-  }
-
-  .minitabFlex {
-    display: flex;
-  }
-
-  .minitabColumn {
-    flex-direction: column;
-  }
-
-  .minitabAround {
-    justify-content: space-around;
-  }
-
-  .minitabCenter {
-    justify-content: center;
-  }
-
-  .minitabAlign {
-    align-items: center;
-  }
-
-  .minitabDimDiv {
-    width: 90%;
-    margin: auto;
-  }
-
-  /*//Second block main//*/
-
-  /*//Because img have different size in 576px i create class ton contain them//*/
-
-  .minitabDimension {
-    width: 100%;
-  }
-
-  .minitabDimension2 {
-    width: 80%;
-  }
-
-  .minitabDimension3 {
-    width: 45%;
-  }
-
-  .minitabDimension4 {
-    width: 87%;
-  }
-
-  /*//Third block main//*/
-
-  .minitabHeight {
-    height: 38vh;
-  }
-
-  .minitabWidth50 {
-    width: 50%;
-    height: 100%;
-  }
-
-  .minitabAbsoluteLeft {
-    position: absolute;
-    left: -1px;
-  }
-
-  .minitabAbsoluteRight {
-    position: absolute;
-    right: -1px;
-  }
-
-  .minitabDimension5 {
-    width: 80%;
-    height: 100%;
-  }
-
-}
-
-@media screen and (min-width: 768px) {
-
-  /*//General rules//*/
-
-  nav {
-    height: 7vh;
-    margin-bottom: 9em;
-  }
-
-  /*//Utility class//*/
-
-  .ipadRelative {
-    position: relative;
-  }
-
-  .ipadInitial {
-    position: initial;
-  }
-
-  .ipadNone {
-    display: none;
-  }
-
-  .ipadBlock {
-    display: block;
-  }
-
-  .ipadFlex {
-    display: flex;
-  }
-
-  .ipadColumn {
-    flex-direction: column;
-  }
-
-  .ipadAlign {
-    align-items: center;
-  }
-
-  .ipadRow {
-    flex-direction: row;
-  }
-
-  .ipadCenter {
-    justify-content: center;
-  }
-
-  .ipadAround {
-    justify-content: space-around;
-  }
-
-  /*//Commun rules//*/
-
-    /*//First block//*/
-
-  .ipadMargintop {
-    margin-top: 8em;
-  }
-
-    /*//Second block//*/
-
-    /*//I use class from break point 576px//*/
-
-  .minitabDimension {
-    width: 80%;
-  }
-
-  .minitabDimension2 {
-    width: 64%;
-  }
-
-  .minitabDimension3 {
-    width: 35%;
-  }
-
-  /*//Third block//*/
-
-  .ipadMargin {
-    width: 90%;
-    margin: auto;
-  }
-
-  .minitabHeight {
-    height: 30vh;
-  }
-
-  .minitabDimension5 { /* for the 3 img up*/
-    width: 110%;
-  }
-
-  .minitabDimension6 { /* for the 2 img down*/
-    width: 35%;
-  }
-
-  .ipadLeftAbsolute {
-    position: absolute; /*// for the img up left//*/
-    left: 2em;
-  }
-
-  .ipadRightAbsolute { /*//for the img up right//*/
-    position: absolute;
-    right: 1em;
-  }
-
-  .ipadMarginUp {
-    margin-top: 1em;
-  }
-
-  .ipadLeftAbsolute2 {
-    position: absolute; /*// for the img down left//*/
-    left: 8em;
-    top: -2em;
-  }
-
-  .ipadRightAbsolute2 {
-    position: absolute; /*// for the img down right//*/
-    right: 8em;
-    top: -2em;
-  }
-
-  .marginLinkInitial { /*// I let this utility class here because it is specific to this part//*/
-    margin: initial;
-  }
-
-  .marginBotLink {
-    margin-bottom: 2.5em;
-  }
-
-  .heightInitial {  /*// I let this utility class here because it is specific to this part//*/
-    height: initial;
-  }
-
-  .ipadDownheight {
-    height: 26vh;
-  }
-
-  /*//Last block//*/
-
-  .divArticle {
-    height: 100%;
-    width: 90%;
-    margin-bottom: 1em;
-  }
-
-}   
-
-@media screen and (min-width: 1200px) {
-
-  /*Utility class*/
-
-  .pcBlock {
-    display: block;
-  }
-
-  .pcNone {
-    display: none;
-  }
-
-  .pcRelative {
-    position: relative;
-  }
-
-  .pcFlex {
-    display: flex;
-  }
-
-  .pcBetween {
-    justify-content: space-between;
-  }
-
-  .pcAround {
-    justify-content: space-around;
-  }
-
-  .pcAlign {
-    align-items: center;
-  }
-
-  .pcMargin {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-
-  /*//nav//*/
-
-  .pcFont {
-    font-size: 1.1em;
-  }
-
-  .figureLogo { /*//I initial the logo to put at flex start position//*/
-    height: 100%;
-    width: initial;
-    position: initial;
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
   }
   
-  .pcMarginLogo {
-    margin-left: 1.5em;
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
-
-  .divFigure {
-    height:100%;
-    position: initial;
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
-
-  /*//header//*/
-
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+  /*///Mobile first///*/
+  
+  /*///General rules///*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;/* from google*/
+  }
+  
+  @font-face { 	/*///from the web site dafont///*/
+    font-family: "Gotham Black";
+    src: url('Gotham\ Black\ Regular.ttf') format("truetype");
+  }
+  
+  .test {
+    background-color: deeppink; /*//this bgc is to test the block//*/
+  }
+  
+  .test2 {
+    background-color: lightgreen;
+  }
+  
+  .test3 {
+    background-color: blue;
+  }
+  
+  .test4 {
+    background-color: brown;
+  }
+  
+  nav {
+    height: 10vh;
+    margin-top: 0.3em;
+  }
+  
   header {
-    width: 120vh;
-    height: 50vh;
+    width: 90%;
+    margin: 1.9em auto 2.2em auto;
+    padding-bottom: 0.5em;
+    font-size: 1.65em;
   }
-
-  header figure, header section {
-    width: 100%;
+  
+  h1 {
+    font-size: 1.7em;
+    line-height: 1em;
+  }
+  
+  a {
+    text-decoration: none; /*// no dry here//*/
+    display: block;/*// no dry here//*/
+  }
+  
+  /*///Utility class///*/
+  
+    /*///Position///*/
+  
+  .relative {
+    position: relative;
+  }
+  
+  .inline {
+    display: inline;
+  }
+  
+  .flex {
+    display:flex;
+  }
+  
+  .directColumn {
+    flex-direction: column;
+  }
+  
+  .alignCenter {
+    align-items: center;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  .textCenter {
+    text-align: center;
+  }
+  
+  .textJustify {
+    text-align: justify;
+  }
+  
+    /*///Police,color///*/
+  
+  .gotham { /*//Use for many titles//*/
+    font-family: 'Gotham Black', sans-serif;
+  }
+  
+  .title {
+    font-weight: 400;
+    color:#162049; 
+  }
+  
+  .bgLink { /*//For the link below every part of the main//*/
+    padding: 0.3em 1em;
+    background-color: #4d22ff;
+    border-radius: 0.9em;
+    font-weight: 500;
+  }
+  
+  .colorWhite { /*//For the link and first block main//*/
+    color: #fff;
+  }
+  
+  .colorBgc {
+    background-color: rgba(179,161,237,.2);
+  }
+  
+  /*///Common rules///*/
+  
+    /*///Nav///*/
+  
+  .height100 {
     height: 100%;
   }
-
-  header figure img {
-    width: 90%;
-    height: 90%;
+  
+  .burger, .logo {
+    width: 100%;
   }
-
-  /*//first block//*/
-
-  .pcSection1 {
+  
+  /*position absolute to place logo and burger menu and no dry on absolute because to read it is more easy*/
+  
+  .figureBurger {
+    width: 40px;
+    height: 40px;
     position: absolute;
-    left: 33em;
+    left: 5%;
   }
-
-  .pcSection3 {
+  
+  .figureLogo {
+    width: 120px;
+    height: 50px;
     position: absolute;
-    right: 33em;
+    left: 40%;
   }
-
-  .pcHeightBandeau {
-    height: 10vh;
+  .navBar { 
+    margin-top: 0.2em;
+    border: 1px solid grey;
+    opacity: 0.2;
   }
-
-  /*//Second block//*/
-
-  .minitabDimension {
-    width: 55%;
+  
+    /*///Header///*/
+  
+  header article p {
+    margin-bottom: 1.5em;
   }
-
-  .minitabDimension2 {
-    width: 44%;
+  
+    /*///Main///*/
+  
+  main section h2 {
+    font-size: 2.2em;
+    line-height: 1.1em;
+    text-align: center; /*//no dry I win lines for all h2//*/
+    margin-top: 1.2em;
   }
-
-  .minitabDimension3 {
-    width: 38%;
+  
+  .h2sec { /*paragraph second block*/
+    font-size: 1.65em;
+    line-height: 1em;
+    margin: 0.5em;
   }
-
-  .containp { /*//for paragraph third img//*/
+  
+  .h2thi { /*paragraph third block*/
+    font-size: 1.65em;
+    line-height: 1.3em;
+    margin: 0.5em;
+  }
+  
+  .linkMargin {
+    margin: 2.5em auto 1.5em auto;
+  }
+  
+  .linkFont {
+    font-size: 1.25em;
+  }
+  
+    /*///First block main///*/
+  
+  .bgcMauve {
+    background-color: #2b345d;
+    padding: 3em; 
+  }
+  
+  .color2fd { /*//for "candidat", "rencontre" and "recruteur"//*/
+    color: #2fd;
+    margin: 0.5em;
+  }
+  
+  .fontp {
+    font-size: 2.2em;
+  }
+  
+    /*///Second block///*/
+  
+  .dimension { /*//This classes target the container of images//*/
+    width: 35vh;
+    height: 35vh;
+    margin-bottom: 1.5em;
+  }
+  
+  .containp  { /*//Target the paragraph below images//*/
     width: 70%;
   }
-
-  .dimension {
-    width: 65%;
-  }
-
-  .pcDimension {
-    width: 33%;
-  }
-
-  .minitabDimension4 {
-    width: 60%;
-  }
-
-  .pcDivWidth {
-    width: 120vh;
-    margin: auto;
-  }
-
-  /*//Third block//*/
-
-  .ipadLeftAbsolute {
-    position: initial; 
-  }
-
-  .ipadRightAbsolute, .minitabAbsoluteLeft {
-    position: initial;
-  } 
-
-  .ipadRightAbsolute2 {
-    position: initial;
-  } 
-
-  .ipadRelative {
-    position: initial;
-  }
-
-  .minitabDimension6 {
-    width: initial;
-  }
-
-  .pcImgDim { /*//To separate in 5 parts equals the block//*/
-    width: 20%;
-    position: relative;
-  }
-
-  .pcDiv5Img {
-    width: 180vh;
-    height: 30vh;
-    margin: auto;
-  }
   
-  .minitabDimension5 { /*//Size the image//*/
-    width:100%;
+  .dimImg {
+    width: 100%;
     height: 100%;
-  }
-
-  .pcleftAbsolute {
-    position: absolute;
-    left: -9em;
-  }
-
-  .pcleftAbsolute2 {
-    position: absolute;
-    left: -13em;
-  }
- 
-  .pcleftAbsolute3 {
-    position: absolute; /*//Don't understand why the figure don't move//*/
-    left: -9.5em;
-    top: 13.7em;
+    margin-top: 0.7em;
   }
   
-  .pcrightAbsolute4 {
-    position: absolute;
-    right: -4em;
+  .h3p { /*paragraph folow by h3*/
+    font-size: 1.1em;
   }
-
-  .pcrightAbsolute5 {
-    position: absolute; /*//Don't understand why the figure don't move//*/
-    right: -0.1em;
-    top: 13.7em;
+  
+    /*///Third block///*/
+  
+  .dimension2 { 
+    width: 33vh;
+    height: 33vh;
   }
-
-  .pcrightAbsolute6 {
-    position: absolute;
-    right: -13em;
-  }
-
-  .pcrightAbsolute7 {
-    position: absolute; /*//Don't understand why the figure don't move//*/
-    right: -8.5em;
-    top: 13.7em;
-  }
-
-  /*//Last block//*/
-
-  .article{
-    width: 112vh;
-    height: 30vh;
-  }
-
-  .money {
+  
+  .dimFigure2 { /*//This classes target the container of images//*/
     width: 100%;
     height: 100%;
   }
   
-  .moneyimg {
+  .dimImg2 {
     width: 100%;
+    height:90%;
+    margin-bottom: 0.9em;
+  }
+  
+  .marginTopTech {
+    margin-top: 1em;
+  }
+  
+  .marginTop {
+    margin-top: 2em;
+  }
+  
+  .marginBotCreation {
+    margin-bottom: 1em;
+  }
+  
+  .dimFigcaption {
+    width: 100%;
+    height: 10%;
+    font-size: 1.1em;
+  }
+  
+    /*///Last block///*/
+  
+  .article {
+    width: 85%;
+    margin: 2em auto;
+    background-color: #eee;
+    padding-top: 0.5em;
+    padding-bottom: 1.8em;
+  }
+  
+  .divArticle {
     height: 100%;
+    width: 85%;
+    margin: auto;
   }
-}
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+  
+  .marginH3 { /*///To not pertubate the code I created class to target easily the h3 and h2///*/
+    margin-bottom: 0.9em;
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
+  
+  .marginph3 {
+    margin-bottom: 1.7em;
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
+  
+  .marginLineH2 { /*///especially for last h2///*/
+    margin: 1em auto;
+    line-height: 1.1em;
+    font-size: 2.3em;
+    text-align: left;
   }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  
+  /*//this mediaquery is necessary to the last link to not grow.//*/
+  
+  @media screen and (min-width: 360px){
+  
+    .inlineSalary {
+      display: inline;
+    }
+  
   }
-
+  
+  @media screen and (min-width: 576px){
+  
+    /*//General rules//*/
+      
+    /*//Utility class//*/
+  
+    .minitabRelative {
+      position: relative;
+    }
+  
+    .minitabNone {
+      display: none;
+    }
+  
+    .minitabBlock {
+      display: block;
+    }
+  
+    .minitabFlex {
+      display: flex;
+    }
+  
+    .minitabCenter {
+      justify-content: center;
+    }
+  
+    .minitabDimDiv {
+      width: 90%;
+      margin: 1em auto 0.1em;
+    }
+  
+    /*//Common rules//*/
+  
+      /*//header//*/
+  
+    header {
+      margin-top: 4.8em;
+      margin-bottom: 6em;
+    }
+  
+    header section h1 {
+      font-size: 1.6em;
+    }
+  
+        /*//Second block main//*/
+  
+    .dimension { /*//This classes target the images//*/
+      width: 40vh;
+      height: 40vh;
+    }
+    
+    .widthArticle { /*//separate article in half part//*/
+      width: 50%;
+    }
+  
+    .pAnonyDim { /*//Target the paragraph below Anonymat image//*/
+      width: 90%;
+    }
+  
+        /*//Third block main//*/
+  
+    .marginTop {
+      margin-top: initial;
+    }
+  
+    .marginTopTech {
+      margin-top: initial;
+    }
+  
+    .margin2img { /*// use in the div containing two images//*/
+      margin-top: 1.5em;
+    }
+  
+    .minitabAbsR {
+      position: absolute;
+      right: -0.7em;
+    }
+  
+    .minitabAbsL {
+      position: absolute;
+      left: -0.7em;
+    }
+  
+  }
+  
+  @media screen and (min-width: 768px) {
+  
+    /*//General rules//*/
+  
+    nav {
+      height: 7vh;
+      margin-bottom: 9em;
+    }
+  
+    /*//Utility class//*/
+  
+    .ipadRelative {
+      position: relative;
+    }
+  
+    .ipadNone {
+      display: none;
+    }
+  
+    .ipadBlock {
+      display: block;
+    }
+  
+    .ipadFlex {
+      display: flex;
+    }
+  
+    .ipadRow {
+      flex-direction: row;
+    }
+  
+    .ipadAround {
+      justify-content: space-around;
+    }
+  
+    /*//Commun rules//*/
+  
+      /*//Main//*/
+  
+        /*//First block//*/
+  
+    .ipadMargintop {
+      margin-top: 8em;
+    }
+  
+        /*//Second block//*/
+  
+    .dimension { /*//This classes target the images//*/
+      width: 25vh;
+      height: 25vh;
+    } 
+  
+        /*//Third block//*/
+  
+    .ipadMargin {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .dimension2 {
+      width: 22vh;
+      height: 22vh;
+    }
+  
+    .minitabAbsR, .minitabAbsL {
+      position: initial;
+    }
+  
+        /*// both for image up//*/
+  
+    .ipadAbsR {
+      position: absolute;
+      right: -1.3em;
+    }
+  
+    .ipadAbsL {
+      position: absolute;
+      left: -1.3em;
+    }
+  
+        /*// both for image down//*/
+  
+    .ipadAbsR2 {
+      position: absolute;
+      right: -0.6em;
+    }
+  
+    .ipadAbsL2 {
+      position: absolute;
+      left: -0.6em;
+    }
+  
+    .marginLinkInitial { /*// I let this utility class here because it is specific to this part//*/
+      margin: initial;
+    }
+  
+    .marginBotTopLink {
+      margin-bottom: 2.5em;
+      margin-top: 3em;
+    }
+  
+        /*//Last block//*/
+  
+    .divArticle {
+      height: 100%;
+      width: 90%;
+      margin-bottom: 1em;
+    }
+  
+  }   
+  
+  @media screen and (min-width: 1200px) {
+  
+    /*Utility class*/
+  
+    .pcBlock {
+      display: block;
+    }
+  
+    .pcNone {
+      display: none;
+    }
+  
+    .pcRelative {
+      position: relative;
+    }
+  
+    .pcFlex {
+      display: flex;
+    }
+  
+    .pcColumn {
+      flex-direction: column;
+    }
+  
+    .pcBetween {
+      justify-content: space-between;
+    }
+  
+    .pcAlign {
+      align-items: center;
+    }
+  
+    .pcMargin {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+  
+    /*//Common rules//*/
+  
+      /*//nav//*/
+  
+    .pcFont {
+      font-size: 1.1em;
+    }
+  
+    .logo {
+      width: 60%;
+    }
+  
+    .figureLogo { /*//I initial the logo to put at flex start position//*/
+      height: 100%;
+      width: initial;
+      position: initial;
+    }
+    
+    .pcMarginLogo {
+      margin-left: 1.5em;
+    }
+  
+    .divFigure {
+      height:100%;
+      position: initial;
+    }
+  
+      /*//header//*/
+  
+    header {
+      width: 120vh;
+      margin: -3em auto;
+      height: 50vh;
+    }
+  
+    header article {
+      width: 50%;
+      margin: auto;
+    }
+    
+    header figure {
+      width: 50%;
+      height: 100%;
+    }
+  
+    header figure img {
+      width: 100%;
+      height: 100%;
+    }
+  
+      /*//Main//*/
+  
+        /*//first block//*/
+  
+    .pcSection1 {
+      position: absolute;
+      left: 33em;
+    }
+  
+    .pcSection3 {
+      position: absolute;
+      right: 33em;
+    }
+  
+    .pcHeight {
+      height: 10vh;
+    }
+  
+        /*//Second block//*/
+  
+    .pcDivWidth {
+      width: 60%;
+      margin: auto;
+    }
+  
+    .widthArticle {
+      width: 33%;
+    }
+  
+        /*//Third block//*/
+  
+    .ipadAbsR, .ipadAbsL, .ipadRelative {
+      position: initial;
+    }
+  
+    .pcAbsLeft {
+      position: absolute;
+      left: -1em;
+    }
+    .pcAbsLeft2 {
+      position: absolute;
+      left: -2em;
+    }
+   
+    .pcAbsRight {
+      position: absolute;
+      right: -1em;
+    }
+  
+    .pcAbsRight2 {
+      position: absolute;
+      right: -2em;
+    }
+   
+        /*//Last block//*/
+  
+    .article{
+      width: 100vh;
+      height: 35vh;
+    }
+  
+    .money {
+      width: 80%;
+      height: 85%;
+      margin: auto;
+    }
+    
+    .moneyimg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * Hide visually and from screen readers
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
   }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
+  
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
    */
-  thead {
-    display: table-header-group;
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
   }
-}
-
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  
