@@ -96,10 +96,14 @@
     padding: 0;
     font-family: 'Mulish', sans-serif;/* from google*/
   }
+
+  body {
+    background-image: url(https://s3-eu-west-1.amazonaws.com/assets.chooseyourboss.com/images/splash-general-3.png);
+  }
   
   @font-face { 	/*///from the web site dafont///*/
     font-family: "Gotham Black";
-    src: url('Gotham\ Black\ Regular.ttf') format("truetype");
+    src: url('Gotham\ Black\ Regular.ttf') format("OpenType");
   }
   
   .test {
@@ -124,7 +128,7 @@
   }
   
   header {
-    width: 90%;
+    width: 95%;
     margin: 1.9em auto 2.2em auto;
     padding-bottom: 0.5em;
     font-size: 1.65em;
@@ -279,6 +283,7 @@
   
   .color2fd { /*//for "candidat", "rencontre" and "recruteur"//*/
     color: #2fd;
+    font-size: 1.2em;
     margin: 0.5em;
   }
   
@@ -341,7 +346,7 @@
   .dimFigcaption {
     width: 100%;
     height: 10%;
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   
     /*///Last block///*/
