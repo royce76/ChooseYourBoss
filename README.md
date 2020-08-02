@@ -10,11 +10,11 @@
 >
 >> To find my HTML code, go to [***index.html***](https://github.com/royce76/ChooseYourBoss/blob/master/index.html) in the branch master.
 >
->> To find my CSS code, go to [***index.html***](https://github.com/royce76/ChooseYourBoss/tree/master/css/main.css) in the branch master.
+>> To find my CSS code, go to [***main.cssl***](https://github.com/royce76/ChooseYourBoss/tree/master/css/main.css) in the branch master.
 >
 >> - ## TO view the website:
 >
->> Go on the link [Terre de geek](https://royce76.github.io/ChooseYourBoss/).
+>> Go on the link [Chooseyourboss](https://royce76.github.io/ChooseYourBoss/).
 >
 > - ## COMMITS
 >
@@ -22,7 +22,7 @@
 >
 >> - ## WIREFRAMES
 >
->> Go to [WIREFRAME](https://github.com/royce76/ChooseYourBoss/tree/master/doc). You will find somes directories as wireframe mobile or tablette, and normal. 
+>> Go to [WIREFRAME](https://github.com/royce76/ChooseYourBoss/tree/master/doc). You will find somes directories as wireframe mobile or tablette, and computer. 
 >
 >> - ## My kanban
 >
